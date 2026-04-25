@@ -117,7 +117,7 @@ if (isset($_POST["name"])) {
    <br><br>
 
  <!-- Google reCAPTCHA -->
-  <div class="g-recaptcha" data-sitekey="6Lf6wjQrAAAAADIHZR52F6MD1Zk6lU6f_DSP8At9"></div>
+  <div class="g-recaptcha" data-sitekey="6LdwUcosAAAAAGgVrbujMDByVLq__6MtDpkf3fcF"></div>
   <br><br>
   
   
