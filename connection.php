@@ -1,12 +1,15 @@
 <?php
 
-$dbhost = "localhost";
-$dbuser = "capisdlj_capitalscorp";
-$dbpass = "THEhybrid3002#";
-$dbname = "capisdlj_capitalscorp";
+$dbhost = "shuttle.proxy.rlwy.net";
+$dbport = 58278;
 
-if(!$con = mysqli_connect($dbhost,$dbuser,$dbpass,$dbname))
-{
+$dbuser = "root";
+$dbpass = "PQryxEVboPKAucKonLsDIqjIKumuPeeE";
+$dbname = "railway";
 
-	die("failed to connect!");
+$con = mysqli_connect($dbhost, $dbuser, $dbpass, $dbname, $dbport);
+
+if (!$con) {
+    die("failed to connect: " . mysqli_connect_error());
 }
+?>
