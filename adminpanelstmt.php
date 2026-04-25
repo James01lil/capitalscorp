@@ -354,7 +354,7 @@ UPDATING...
   <h2>Manage Your Clients</h2>
   <div class="management">
     <table border="2">
-        <tr><th>ID</th><th>Firstname</th><th>Lastname</th><th>Username</th><th>Email</th><th>Password</th><th>Phone</th><th>Country</th><th>State</th><th>Address</th><th>Plan</th><th>Currency</th><th>Account Type</th><th>Deposited</th><th>Total Balance</th><th>Bonus</th><th>Total Profit</th><th>Referrals</th><th>Pending Withdrawals</th><th>Total Withdrawals</th><th>Last Deposit</th><th>Last Withdrawal</th><th>Registration Date        <tr><th>ID</th><th>Firstname</th><th>Lastname</th><th>Username</th><th>Email</th><th>Password</th><th>Phone</th><th>Country</th><th>State</th><th>Address</th><th>Plan</th><th>Currency</th><th>Account Type</th><th>Deposited</th><th>Total Balance</th><th>Bonus</th><th>Total Profit</th><th>Referrals</th><th>Pending Withdrawals</th><th>Total Withdrawals</th><th>Last Deposit</th><th>Last Withdrawal</th><th>Registration Date</th><th>Actions</th></tr>
+        <tr><th>ID</th><th>Firstname</th><th>Lastname</th><th>Username</th><th>Email</th><th>Password</th><th>Phone</th><th>Country</th><th>State</th><th>Address</th><th>Plan</th><th>Currency</th><th>Account Type</th><th>Deposited</th><th>Total Balance</th><th>Bonus</th><th>Total Profit</th><th>Referrals</th><th>Pending Withdrawals</th><th>Total Withdrawals</th><th>Last Deposit</th><th>Last Withdrawal</th><th>Registration Date</th><th>Actions</th></tr>
         
         <?php foreach ($myuser as $capisdlj_capitalscorp): ?>
         <tr>
