@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Fake FaceTime Call</title>
+  <style>
+    body {
+      margin: 0;
+      background: black;
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    #phone {
+      width: 100%;
+      height: 100vh;
+      background: black;
+      border-radius: 30px;
+      overflow: hidden;
+      box-shadow: 0 0 15px rgba(255,255,255,0.2);
+      position: relative;
+    }
+
+    video {
+      width: 100%;
+      height: 100vh;
+      object-fit: cover;
+    }
+
+    #webcam {
+      position: absolute;
+      width: 270px;
+      height: 370px;
+      bottom: 500px;
+      right: 45px;
+      border-radius: 12px;
+      border: 3px solid white;
+      z-index: 10;
+      object-fit: cover;
+    }
+
+    #controls {
+      position: absolute;
+      bottom: 300px;
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      z-index: 20;
+    }
+
+    .btn {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      border: none;
+      background: rgba(255,255,255,0.2);
+      color: white;
+      font-size: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      background: rgba(255,255,255,0.4);
+    }
+
+    #status {
+      text-align: center;
+      margin-top: 12px;
+      color: white;
+      z-index:99;
+      position:fixed;
+      font-size:15px;
+      font-weight:800;
+    }
+  </style>
+</head>
+<body>
+
+<div id="phone">
+  <video id="fakeCall" loop></video>
+  <video id="webcam" autoplay muted playsinline></video>
+
+  <div id="controls">
+    <button class="btn" id="muteBtn">🔇</button>
+    <button class="btn" id="camBtn">📷</button>
+    <button class="btn" id="endBtn">❌</button>
+  </div>
+</div>
+
+<div id="status">Connecting...</div>
+
+<script>
+  const fakeCall = document.getElementById('fakeCall');
+  const webcam = document.getElementById('webcam');
+  const muteBtn = document.getElementById('muteBtn');
+  const camBtn = document.getElementById('camBtn');
+  const endBtn = document.getElementById('endBtn');
+  const status = document.getElementById('status');
+
+  fakeCall.src = 'RPReplay_Final1741344238.mov';
+
+  // Webcam init
+  navigator.mediaDevices.getUserMedia({ video: true, audio: false })
+    .then(stream => webcam.srcObject = stream)
+    .catch(() => webcam.style.display = 'none');
+
+  // Controls
+  let muted = false;
+  muteBtn.onclick = () => {
+    muted = !muted;
+    fakeCall.muted = muted;
+    muteBtn.textContent = muted ? '🔈' : '🔇';
+  };
+
+  let camVisible = true;
+  camBtn.onclick = () => {
+    camVisible = !camVisible;
+    webcam.style.display = camVisible ? 'block' : 'none';
+    camBtn.textContent = camVisible ? '📷' : '🙈';
+  };
+
+  endBtn.onclick = () => endCall("Call Ended");
+
+  // Simulate 5s "Connecting"
+  setTimeout(() => {
+    status.textContent = "Call Connected";
+    fakeCall.play();
+
+    // Simulate glitch skipping effect every 5s
+    const glitchInterval = setInterval(() => {
+      if (!fakeCall.paused) {
+        let jump = (Math.random() * 3) - 1; // skip ahead or back 1s max
+        fakeCall.currentTime = Math.max(0, fakeCall.currentTime + jump);
+      }
+    }, 1000);
+
+    // End after 30s
+    setTimeout(() => {
+      clearInterval(glitchInterval);
+      endCall("Call Automatically Ended");
+    }, 19000);
+
+  },1000);
+
+  function endCall(message) {
+    fakeCall.pause();
+    status.textContent = message;
+    document.getElementById('controls').style.display = 'none';
+  }
+</script>
+
+</body>
+</html>

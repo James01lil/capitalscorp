@@ -1,0 +1,115 @@
+.video-container {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+.video-container video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+}
+@media (max-width:1200px){
+  .video-container {
+    height: ;
+  }
+  .video-content{
+   padding: 10px 30px;
+  }
+}
+@media (max-width:600px){
+.video-container {
+  /*height: 60vh;*/
+}
+.video-content ul{
+  float: left;
+  margin-left:-100px;
+}
+.video-content a{
+  padding:5px 15px;
+}
+}
+@media (max-width:450px){
+.video-container {
+  height: ;
+}
+}
+.video-content{
+  position: relative;
+  z-index: 1;
+  color: white;
+  text-align: left;
+  float: left;
+  height: 100%;
+  overflow:auto;
+  width:100%;
+  font-size: 12px;
+  background: rgba(255, 255, 255, 0.2); /* Semi-transparent */
+    padding: 30px 50px;
+   margin-top:0px;
+    backdrop-filter: blur(1px); /* This creates the blur */
+    -webkit-backdrop-filter: blur(1px); /* Safari support */
+}
+.video-content ul{
+  float: right;
+}
+.video-content a{
+  font-size: 12px;
+  font-weight: 800;
+  padding:10px 20px;
+  background: #bd068f;
+  color:#000;
+}
+label{
+  color:#000;
+  font-size: 12px;
+  font-weight: 800;
+}
+input{
+  width:100%;
+  height:30px;
+  background:#ccccccff;
+  color:#000;
+  font-size:12px;
+  font-weight:800;
+  padding-right:-50px;
+  border-radius:5px;
+  border:1px solid #ccccccff;
+  outline-color: #ccccccff;
+}
+select{
+  width:100%;
+  height:30px;
+  background:#ccccccff;
+  color:#000;
+  font-size:12px;
+  font-weight:800;
+  padding-right:-50px;
+  border-radius:5px;
+  border:1px solid #ccccccff;
+  outline-color: #ccccccff;
+}
+@media (max-width:500px){
+  .video-content{
+      padding: 20px 40px;
+     margin-top:0px;
+     }
+  .video-content small{
+    font-size: 14px;
+    color:#000;
+  }
+  .video-content button{
+  padding:8px 20px;
+  background: radial-gradient(circle at top left, #2f19bd, #bd068f, #d31a39);
+  color:#ddd;
+  border:3px solid #720f59;
+  border-radius:7px;
+  font-size:14px;
+  }
+}

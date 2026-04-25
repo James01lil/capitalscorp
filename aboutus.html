@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>capitalCORP</title>
+        <!-- FAVIVON -->
+        <link rel="shortcut icon" href="images/favicon.png" type="image/png">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+	      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <link rel="stylesheet" href="csss/incoo.css" />
+        <link rel="stylesheet" href="csss/ao.css" />
+          <link rel="stylesheet" href="csss/stylle.css">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+<!-- Swiper CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+
+
+
+    <style>
+       .backgroundimgservice {
+    background-image: url('imgg/ft-8.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: ;
+               background-attachment:scroll; 
+
+-o-background-size:cover; 
+
+-moz-background-size:cover; 
+
+-webkit-background-size:cover;
+    height: 70%;
+    filter: brightness(1.0); 
+  }
+  .contentt {
+    
+  }
+  .supportpay {
+    background-image: url('imgg/call-to-action-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+    height: 100%;
+    filter: brightness(0.7); 
+          
+-o-background-size:cover; 
+
+-moz-background-size:cover; 
+
+-webkit-background-size:cover;
+    height: 70%;
+    filter: brightness(1.0); 
+  }
+  .contentt2 {
+    
+  }
+
+
+  
+  .swiper {
+    width: 90%;
+    max-width: 1000px;
+    margin: 40px auto;
+  }
+
+  .custom-box {
+    background: #ccccccf1;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    font-size: 24px;
+  }
+
+  .swiper-slide {
+    background: #0a0016;
+    border-radius:10px;
+    padding:10px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+            
+            .whatsapp-float {
+  position: fixed;
+                    
+  bottom: 50px;
+  left: 30px;
+                    float:left;
+  z-index: 900;
+}
+            
+            
+            .popup {
+
+  position: fixed;
+
+  padding: 10px 20px;
+                    width:70%;
+
+  background: #ddd;
+
+  color: 000;
+font-weight:700;
+                    border:7px solid #00BFFF;
+
+  border-radius: 5px;
+
+  z-index: 1000;
+                    float:right;
+
+  opacity: 1;
+
+  transition: opacity 0.5s;
+
+  font-family: sans-serif;
+
+}
+
+    </style>
+  </head>
+  <body>    <!--<div id="transcroller-body" class="aos-all">
+            </div>-->
+
+      <header data-aos="fade-right">&nbsp;&nbsp;&nbsp;&nbsp;
+        <i class="fa fa-facebook"></i>&nbsp;&nbsp;&nbsp;&nbsp;
+        <i class="fa fa-twitter"></i>&nbsp;&nbsp;&nbsp;&nbsp;
+        <i class="fa fa-instagram"></i>&nbsp;&nbsp;&nbsp;&nbsp;
+        <i class="fa fa-linkedin"></i>&nbsp;&nbsp;&nbsp;&nbsp;
+        <i class="fa fa-telegram"></i>&nbsp;&nbsp;&nbsp;&nbsp;
+        <i class="fa fa-gmail"></i>
+        <a href="" style="float:right;" data-aos="fade-down">supportus@capitalsCORP.online</a>
+    </header>
+     <nav>
+             <!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+  <div class="tradingview-widget-container__widget"></div>
+  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+  {
+  "symbols": [
+    {
+      "proName": "FOREXCOM:SPXUSD",
+      "title": "S&P 500 Index"
+    },
+    {
+      "proName": "FOREXCOM:NSXUSD",
+      "title": "US 100 Cash CFD"
+    },
+    {
+      "proName": "FX_IDC:EURUSD",
+      "title": "EUR to USD"
+    },
+    {
+      "proName": "BITSTAMP:BTCUSD",
+      "title": "Bitcoin"
+    },
+    {
+      "proName": "BITSTAMP:ETHUSD",
+      "title": "Ethereum"
+    }
+  ],
+  "showSymbolLogo": true,
+  "isTransparent": true,
+  "displayMode": "adaptive",
+  "colorTheme": "dark",
+  "locale": "en"
+}
+  </script>
+</div>
+<!-- TradingView Widget END -->
+
+      <ul style="margin-top:-15px;" data-aos="fade-right">
+        <a href=""><h4 style="font-weight: 800;color:#ccccccf1;float: left;">capitals<span style="background: linear-gradient(to right, #402bca,
+                                      #d625aa, #c77f3d, #d44c63); -webkit-text-fill-color: transparent; -webkit-background-clip: text;font-weight: 800;">CORP</span></h4></a>
+      </ul>
+      <ul style="float:right;" class="navskip1" data-aos="fade-left">
+        <a href="index.html" style="color:#ddd;font-weight: 700;font-size: 12px;">HOME</a>
+        <a href="aboutus.html" style="color:#ddd;font-weight: 700;font-size: 12px;">ABOUT US</a>
+        <a href="ourservices.html" style="color:#ddd;font-weight: 700;font-size: 12px;">SERVICES</a>
+        <a href="ourpackages.html" style="color:#ddd;font-weight: 700;font-size: 12px;">PACKAGES</a>
+        <a href="contactus.html" style="color:#ddd;font-weight: 700;font-size: 12px;">INQUIRIES</a>
+        <a href=""><input type="submit" style="" name="REGISTER" style="color:#ddd;font-weight: 700;font-size: 12px;"></a>
+        <a href=""><input type="submit" style="" name="LOGIN" style="color:#ddd;font-weight: 700;font-size: 12px;"></a>
+        </ul>
+        <ul style="float:right;" class="navskip2" data-aos="fade-left">
+          <a href="signup.php"><input type="submit" style="" name="REGISTER" style="color:#ddd;font-weight: 700;font-size: 12px;"></a>
+          <a href="login.php"><input type="submit" style="" name="LOGIN" style="color:#ddd;font-weight: 700;font-size: 12px;"></a>
+          <a href="" style="color:#ddd;font-weight: 700;font-size: 12px;font-size: 30px;padding:2px 10px;">&#9776;</a> &nbsp;&nbsp;&nbsp;&nbsp;
+        </ul>
+          <ul style="" class="navskip3">
+          
+         <div id="mediaNav" class="overlay">
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+              <br><br><br>
+                 <div class="overlay-content">
+                  <a href="index.html" styl="background: background: linear-gradient(to right, #402bca,
+                                      #d625aa, #c77f3d, #d44c63); -webkit-text-fill-color: transparent; -webkit-background-clip: text;font-weight: 800;">HOME</a>
+                  <br>
+                  <a href="aboutus.html" styl="background: background: linear-gradient(to right, #402bca,
+                                      #d625aa, #c77f3d, #d44c63); -webkit-text-fill-color: transparent; -webkit-background-clip: text;font-weight: 800;">ABOUT US</a>
+                  <br>
+                  <a href="ourservices.html" styl="background: background: linear-gradient(to right, #402bca,
+                                      #d625aa, #c77f3d, #d44c63); -webkit-text-fill-color: transparent; -webkit-background-clip: text;font-weight: 800;">OUR SERVICES</a>
+                  <br>
+                  <a href="ourpackages.html" styl="background: background: linear-gradient(to right, #402bca,
+                                      #d625aa, #c77f3d, #d44c63); -webkit-text-fill-color: transparent; -webkit-background-clip: text;font-weight: 800;">OUR PACKAGES</a>
+                  <br>
+                  <a href="ournews.html" styl="background: background: linear-gradient(to right, #402bca,
+                                      #d625aa, #c77f3d, #d44c63); -webkit-text-fill-color: transparent; -webkit-background-clip: text;font-weight: 800;">NEWS</a>
+                  <br>
+                  <a href="contactus.html" styl="background: background: linear-gradient(to right, #402bca,
+                                      #d625aa, #c77f3d, #d44c63); -webkit-text-fill-color: transparent; -webkit-background-clip: text;font-weight: 800;">CONTACT US</a>
+                 </div>
+          </div>
+          <span class="nav-controller" onclick="openNav()" style="font-weight: 700;">&#9776;</span>
+          
+          </ul>
+          
+     </nav>
+  <!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+    <div class="tradingview-widget-container__widget"></div>
+    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+    {
+    "symbols": [
+      {
+        "proName": "FOREXCOM:SPXUSD",
+        "title": "S&P 500 Index"
+      },
+      {
+        "proName": "FOREXCOM:NSXUSD",
+        "title": "US 100 Cash CFD"
+      },
+      {
+        "proName": "FX_IDC:EURUSD",
+        "title": "EUR to USD"
+      },
+      {
+        "proName": "BITSTAMP:BTCUSD",
+        "title": "Bitcoin"
+      },
+      {
+        "proName": "BITSTAMP:ETHUSD",
+        "title": "Ethereum"
+      }
+    ],
+    "showSymbolLogo": true,
+    "isTransparent": true,
+    "displayMode": "adaptive",
+    "colorTheme": "dark",
+    "locale": "en"
+  }
+    </script>
+  </div>
+  <!-- TradingView Widget END -->
+  <br><br><br><br>
+  
+  <div class="conten">
+          
+          
+  <div class="snow-container5" id="snowContainer5">
+    <h3 data-aos="zoom-out" style="background: linear-gradient(to right, #402bca,
+    #d625aa, #c77f3d, #d44c63); -webkit-text-fill-color: transparent; -webkit-background-clip: text;font-weight: 800;text-align: center;">About Us<br><small style="">Inquire More Abous Us and Our Platform</small></h3>
+
+    <div class="aboutus">
+      <ul style="" data-aos="fade-right">
+      <img src="imgg/original-2ebe7a713bc12cf01f583fc0b06ee5d6[1].jpg" alt="Sample Image" class="image5">
+      </ul>
+      <ul style="" data-aos="zoom-out">
+        <h2 style="font-weight: 800;color:#ffffff;">capitals<span style="background: linear-gradient(to right, #402bca,
+                                      #d625aa, #c77f3d, #d44c63); -webkit-text-fill-color: transparent; -webkit-background-clip: text;font-weight: 800;">CORP</span>.</h2>
+        <p>Is an enterprise digital payments service established from Barclay Stock Brockers .inc, offered by commodities trade and fiat services over 100 tradable currencies. Our services allows you to trade comodities and stocks through our electronic fiat, Instant withdrawal is guaranteed, when value is been added using your Visa/MasterCard or bank transfer. Nothing extra. Join over 700,000 users from all over the world satisfied with our services..</p>
+        <i class="fa fa-save"></i>
+      <h4 style="background: linear-gradient(to right, #402bca,
+                                      #d625aa, #c77f3d, #d44c63); -webkit-text-fill-color: transparent; -webkit-background-clip: text;font-weight: 600;">Our Mission</h4>
+      <p>To act as a catalyst for universal adoption and commodity to fiat innovation. We focus on investing in commodities.</p>
+      <h4 style="background: linear-gradient(to right, #402bca,
+                                      #d625aa, #c77f3d, #d44c63); -webkit-text-fill-color: transparent; -webkit-background-clip: text;font-weight: 600;">Our Advantages</h4>
+      <p>Our team consists only of qualified people connected with the financial industry for years, who are also passionate about the fledgling but very strong commodities market to wallet technology.</p>
+      <h4 style="background: linear-gradient(to right, #402bca,
+                                      #d625aa, #c77f3d, #d44c63); -webkit-text-fill-color: transparent; -webkit-background-clip: text;font-weight: 600;">Our Guarantee</h4>
+      <p>capitalsCORP.online using advanced investment techniques, such as financial leverage, guarantees huge profits even at the currently fluctuating rate of commodities. When starting cooperation with us you have 100% guarantee that you will not lose your funds, but you can only gain.</p>
+
+      </ul>
+    </div>
+     
+    </div>
+
+
+    <div class="snow-container7" id="snowContainer7">
+
+        <div class="container7">
+          <ul class="" data-aos="fade-right">
+            <h3  style="background: linear-gradient(to right, #402bca,
+                                            #d625aa, #c77f3d, #d44c63); -webkit-text-fill-color: transparent; -webkit-background-clip: text;">Discover a World of Opportunities</h3>
+            <p style="font-weight: 600;">Invest globally in stocks, options, futures, currencies, bonds and funds from a single unified platform. Fund your account in multiple currencies and trade assets denominated in multiple currencies. Access market data 24 hours a day and six days a week.</p>
+            <a href="">160&nbsp;Markets</a>&nbsp;|&nbsp;
+            <a href="">36&nbsp;Countries</a>&nbsp;|&nbsp;
+            <a href="">28&nbsp;Currencies</a>
+            <br><br>
+            <input type="submit" value="Scan Global Markets">
+            <h3 style="background: linear-gradient(to right, #402bca,
+                                            #d625aa, #c77f3d, #d44c63); -webkit-text-fill-color: transparent; -webkit-background-clip: text;">Our Global Coverage</h3>
+            <p style="font-weight: 600;">A multi platform layout, technical analysis, historical quotes beyound everything your looking for all in one device in any part of the world. Not only do we provide our clients with the best tools globally, but we also look out for 'em.</p>
+            <a href="">NORTH AMERICA,&nbsp;EUROPE,</a>
+            <a href="">ASIA.&nbsp;AFRICA.</a>
+            <a href="">MIDDLE EAST,&nbsp;AUSTRALIA & NEW Z.</a>
+            <br><br>
+          </ul>
+          <ul class="" data-aos="fade-left">
+            <img src="imgg/freepik__background__43191.png">
+            NYSE :<a href="">Open </a> |
+            LSE :<a href="">Closed </a> |
+            HKSE :<a href="">Closed </a> |
+          </ul>
+        </div>
+
+  </div>
+  </div>
+
+
+  <div class="Client" data-aos="zoom-out">
+    <h3 style="text-align:center;background: linear-gradient(to right, #402bca,
+                                            #d625aa, #c77f3d, #d44c63); -webkit-text-fill-color: transparent; -webkit-background-clip: text;font-weight: 800;">Our Clients Reviews</h3>
+      
+<!-- Carousel Container -->
+<div class="swiper mySwiper">
+  <div class="swiper-wrapper">
+
+    <!-- Each slide contains your custom div -->
+    <div class="swiper-slide">
+      <div class="custom-box">
+        <p style="font-size:15px;font-weight:800;color:#000000;">When You Talk About Trade Comparison, With Great Results & Reputations. They Remain The Best</p>
+        <hr style="border:1px solid #333;">
+        <ul>
+        <h5 href="" style="font-size:15px; font-weight:800;background: linear-gradient(to right, #402bca,
+                                      #d625aa, #c77f3d, #d44c63); -webkit-text-fill-color: transparent; -webkit-background-clip: text;"> &#8252; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; MASON SMITH</h5>
+        <h6 style="background: linear-gradient(to right, #402bca,
+                                      #d625aa, #c77f3d, #d44c63); -webkit-text-fill-color: transparent; -webkit-background-clip: text;">INVESTOR</h6>
+        <h6 style="color:#000000;">DATE:::: 10 March 2025</h6>
+        </ul>
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <div class="custom-box">
+        <p style="font-size:15px;font-weight:800;color:#000000;">$&nbsp;83,000 Withdrawn Sucessfully. Nice Trading On This Platform.</p>
+        <hr style="border:1px solid #333;">
+        <ul>
+        <h5 href="" style="font-size:15px; font-weight:800;background: linear-gradient(to right, #402bca,
+                                      #d625aa, #c77f3d, #d44c63); -webkit-text-fill-color: transparent; -webkit-background-clip: text;"> &#8252; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; JANET MURPHY</h5>
+        <h6 style="background: linear-gradient(to right, #402bca,
+                                      #d625aa, #c77f3d, #d44c63); -webkit-text-fill-color: transparent; -webkit-background-clip: text;">INVESTOR</h6>
+        <h6 style="color:#000000;">DATE:::: 10 March 2025</h6>
+        </ul>
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <div class="custom-box">
+        <p style="font-size:15px;font-weight:800;color:#000000;">I Got My Investment Right On Time, Looking Forward To Invest more.</p>
+        <hr style="border:1px solid #333;">
+        <ul>
+        <h5 href="" style="font-size:15px; font-weight:800;background: linear-gradient(to right, #402bca,
+                                      #d625aa, #c77f3d, #d44c63); -webkit-text-fill-color: transparent; -webkit-background-clip: text;"> &#8252; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ROBERT ADAMS</h5>
+        <h6 style="background: linear-gradient(to right, #402bca,
+                                      #d625aa, #c77f3d, #d44c63); -webkit-text-fill-color: transparent; -webkit-background-clip: text;">INVESTOR</h6>
+        <h6 style="color:#000000;">DATE:::: 10 March 2025</h6>
+        </ul>
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <div class="custom-box">
+        <p style="font-size:15px;font-weight:800;color:#000000;">You Cannot Choose A Better Platform Than The Services Rendered By This Great Platform.</p>
+        <hr style="border:1px solid #333;">
+        <ul>
+        <h5 href="" style="font-size:15px; font-weight:800;background: linear-gradient(to right, #402bca,
+                                      #d625aa, #c77f3d, #d44c63); -webkit-text-fill-color: transparent; -webkit-background-clip: text;"> &#8252; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; JAYLA HOPSON</h5>
+        <h6 style="background: linear-gradient(to right, #402bca,
+                                      #d625aa, #c77f3d, #d44c63); -webkit-text-fill-color: transparent; -webkit-background-clip: text;">INVESTOR</h6>
+        <h6 style="color:#000000;">DATE:::: 10 March 2025</h6>
+        </ul>
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <div class="custom-box">
+        <p style="font-size:15px;font-weight:800;color:#000000;">CryptoCurrency Investment On Capitalscorp Remains The Best, Has Been Easy Wonderful And User Friendly To Me</p>
+        <hr style="border:1px solid #333;">
+        <ul>
+        <h5 href="" style="font-size:15px; font-weight:800;background: linear-gradient(to right, #402bca,
+                                      #d625aa, #c77f3d, #d44c63); -webkit-text-fill-color: transparent; -webkit-background-clip: text;"> &#8252; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; JERRY ROB</h5>
+        <h6 style="background: linear-gradient(to right, #402bca,
+                                      #d625aa, #c77f3d, #d44c63); -webkit-text-fill-color: transparent; -webkit-background-clip: text;">INVESTOR</h6>
+        <h6 style="color:#000000;">DATE:::: 10 March 2025</h6>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+    
+            
+  </div>
+
+                                  <div class="getstarted" id="getstarted" data-aos="zoom-out">
+                                    <div class="supportpay">
+                                      <div class="supported">
+                                        <ul>
+                                          <h2 style="font-weight:800;">GET STARTED TODAY WITH CRYPTO MINNING</h2>
+                                          <h4 style="font-weight:800;">Open an account for free & start earning</h4>
+                                           <a href=".php"><input type="submit" value="REGISTER NOW" class="bottom-register" style=""></a> 
+                                                                     <h4 style="font-weight:800;">SUPPORTED PAYMENTS METHODS </h4>
+                                                                      <img src="imgg/american-express.png"style="width:30px;">
+                                                                      <img src="imgg/mastercard.png"style="width:30px;">
+                                                                      <img src="imgg/visa.png"style="width:30px;">
+                                                                      <img src="imgg/paypal.png"style="width:30px;">
+                                                                      <img src="imgg/maestro.png"style="width:30px;">
+                                                                    </ul>
+
+                                        </div>
+                              
+                                    </div>
+                                    
+                              </div>
+<br><br>
+ <div class="footer">
+      <ul data-aos="zoom-out">
+          <h3 style="background: linear-gradient(to right, #402bca,
+                                            #d625aa, #c77f3d, #d44c63); -webkit-text-fill-color: transparent; -webkit-background-clip: text;font-weight: 800;">capitalscorp</h3>
+          <p style="">capitalscorp is a fully automated trading platform, that gives you control of your investments, and alow you to withdraw your profits and capital at any confortable time.          </p>
+          <i class="fa fa-facebook"></i>
+          <i class="fa fa-twitter"></i>
+          <i class="fa fa-instagram"></i>
+          <i class="fa fa-linkedin"></i>
+          <i class="fa fa-telegram"></i>
+          <i class="fa fa-gmail"></i>
+        </ul>
+
+      <ul data-aos="fade-up">
+          <h4 style="background: linear-gradient(to right, #402bca,
+                                            #d625aa, #c77f3d, #d44c63); -webkit-text-fill-color: transparent; -webkit-background-clip: text;font-weight: 800;">OUR USEFUL LINKS</h4>
+          <p style="">&#10060; HOME</p>
+          <p style="">&#10060; FAQS</p>
+          <p style="">&#9989; TERMS & CONDITIONS</p>
+          <p style="">&#9989; PRIVACY POLICY</p>
+          <p style="">&#9989; CONTACT US</p>
+      </ul>
+
+      <ul data-aos="fade-down">
+          <h5 style="background: linear-gradient(to right, #402bca,
+                                            #d625aa, #c77f3d, #d44c63); -webkit-text-fill-color: transparent; -webkit-background-clip: text;font-weight: 800;">CONTACT US</h5>
+          <p style="">24/7 CUSTOMERS LIVE CHAT</p>
+          <i class="fa fa-address"><p style="">ADDRESS<br>336 Graceland Avenue,Indiana,Indianapolis</p></i>
+          <br>
+          <i class="fa fa-mail"><a href="https://www.gmail.com"><p style="">EMAIL<br>supportus@capitalscorp.online</p></a></i>
+          </ul>
+          <ul data-aos="fade-left">
+            <img src="imgg/freepik_br_f966e444-edb6-46d0-a72f-a252a998a20e.png">
+            </ul>
+  </div>
+
+          
+
+   
+
+  <!-- Add more content here to test scrolling -->
+  </div>
+ 
+
+
+<div id="popup-container"></div>
+      
+    </div>
+
+ 
+<script>
+
+function createPopup(message) {
+
+  const popup = document.createElement('div');
+
+  popup.className = 'popup';
+
+  popup.textContent = message;
+
+  // Random position
+
+  const maxTop = window.innerHeight - 100;
+
+  const maxLeft = window.innerWidth - 200;
+
+  popup.style.top = `${Math.random() * maxTop}px`;
+
+ // popup.style.left = `${Math.random() * maxLeft}px`;
+
+  // Add to container
+
+  document.getElementById('popup-container').appendChild(popup);
+
+  // Disappear after 2 seconds
+
+  setTimeout(() => {
+
+    popup.style.opacity = '0';
+
+    setTimeout(() => popup.remove(), 500); // Remove from DOM after fade out
+
+  }, 5000);
+
+}
+
+// Show a random popup every 1 second
+
+setInterval(() => {
+
+  const messages = ['Viktor from RomanianðŸ‡·ðŸ‡´ has initiated a withdrawal of â‚¬57,000!', 'Abel from NetherlandsðŸ‡³ðŸ‡± deposited â‚¬50,000!', 'Sushi from IndiaðŸ‡®ðŸ‡³ has just invested $15000!', 'Micheal from usaðŸ‡ºðŸ‡¸ initiated a withdrawal of $45,000!', 'Aumbrey from canadaðŸ‡¨ðŸ‡¦ started a trade with $25,000!'];
+
+  const randomMsg = messages[Math.floor(Math.random() * messages.length)];
+
+  createPopup(randomMsg);
+
+}, 7000);
+
+</script>
+
+    
+    <script src="jss/aos.js"></script>
+    <script>
+      AOS.init({
+        easing: 'ease-in-out-sine'
+      });s
+
+            
+             function openNav() {
+  document.getElementById("mediaNav").style.width = "50%";
+}
+function closeNav() {
+  document.getElementById("mediaNav").style.width = "0%";
+}
+            
+            
+    </script>
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    loop: true,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+    breakpoints: {
+      640: { slidesPerView: 1 },
+      768: { slidesPerView: 2 },
+      1024: { slidesPerView: 3 }
+    }
+  });
+</script>
+
+
+
+
+<script src="jss/snow.j"></script>
+<script src="jss/rainingcfd.j"></script>
+  </body>
+</html>
