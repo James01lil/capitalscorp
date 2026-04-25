@@ -5,7 +5,7 @@ $dbport = 51991;
 
 $dbuser = "root";
 $dbpass = "FwlIYEdygHGUaCxGYCUPrtVUxEhHaEqg";
-$dbname = "railway";
+$dbname = "capisdlj_capitalscorp";
 
 $con = mysqli_connect($dbhost, $dbuser, $dbpass, $dbname, $dbport);
 
