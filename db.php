@@ -1,10 +1,10 @@
 <?php
 
 $host = "shuttle.proxy.rlwy.net";
-$port = 58278;
+$port = 51991;
 $db   = "railway";
 $user = "root";
-$pass = "PQryxEVboPKAucKonLsDIqjIKumuPeeE";
+$pass = "FwlIYEdygHGUaCxGYCUPrtVUxEhHaEqg";
 
 $dsn = "mysql:host=$host;port=$port;dbname=$db;charset=utf8mb4";
 
