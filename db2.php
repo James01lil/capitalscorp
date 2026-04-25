@@ -3,7 +3,7 @@
 $host = "shuttle.proxy.rlwy.net";
 $port = 51991;
 
-$dbname = "railway";
+$dbname = "capisdlj_capitalscorp";
 $username = "root";
 $password = "FwlIYEdygHGUaCxGYCUPrtVUxEhHaEqg";
 
