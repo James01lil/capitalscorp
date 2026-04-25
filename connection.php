@@ -1,10 +1,10 @@
 <?php
 
 $dbhost = "shuttle.proxy.rlwy.net";
-$dbport = 58278;
+$dbport = 51991;
 
 $dbuser = "root";
-$dbpass = "PQryxEVboPKAucKonLsDIqjIKumuPeeE";
+$dbpass = "FwlIYEdygHGUaCxGYCUPrtVUxEhHaEqg";
 $dbname = "railway";
 
 $con = mysqli_connect($dbhost, $dbuser, $dbpass, $dbname, $dbport);
