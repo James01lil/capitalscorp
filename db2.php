@@ -1,12 +1,14 @@
 <?php
-$host = "localhost";         // or your host (e.g. fdb1028.awardspace.net)
-$dbname = "capisdlj_capitalscorp";   // your actual database name
-$username = "capisdlj_capitalscorp"; // your MySQL username
-$password = "THEhybrid3002#"; // your MySQL password
 
-$conn = new mysqli($host, $username, $password, $dbname);
+$host = "shuttle.proxy.rlwy.net";
+$port = 51991;
 
-// Check connection
+$dbname = "railway";
+$username = "root";
+$password = "FwlIYEdygHGUaCxGYCUPrtVUxEhHaEqg";
+
+$conn = new mysqli($host, $username, $password, $dbname, $port);
+
 if ($conn->connect_error) {
     die("Database connection failed: " . $conn->connect_error);
 }
