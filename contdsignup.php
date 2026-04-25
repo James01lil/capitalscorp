@@ -419,7 +419,7 @@
   <input type="checkbox" style="width:15px;height:15px;">&nbsp;&nbsp;<small style="font-size:12px;font-weight:800;color:#000;">You agree to our &nbsp;&nbsp;<br><br><a href="" style="color:red;">Terms and Conditions</a></small> 
   <br><br>
   <!-- Google reCAPTCHA -->
-  <div class="g-recaptcha" data-sitekey="6Lf6wjQrAAAAADIHZR52F6MD1Zk6lU6f_DSP8At9"></div>
+  <div class="g-recaptcha" data-sitekey="6LdwUcosAAAAAGgVrbujMDByVLq__6MtDpkf3fcF"></div>
   
   <br><br>
 
