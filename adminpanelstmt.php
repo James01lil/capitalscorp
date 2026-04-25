@@ -339,8 +339,13 @@ li{
       <p style="color:#666;font-weight: 800;">Total Invested Users</p>
   </ul>
   <ul data-aos="fade-down">
-    <h5 style="margin-top:-10px;">EXCELLENT PLATFORM&nbsp;<small style="font-size:16px;font-weight: 800;color:#fff;"><?php echo $user_data['id']; ?></small></h5>
-    <i class="fas fa-chart-line" style="float:right;"></i>
+<h5 style="margin-top:-10px;">
+EXCELLENT PLATFORM&nbsp;
+<small style="font-size:16px;font-weight: 800;color:#fff;">
+<?php echo count($myuser); ?>
+</small>
+</h5>
+	  <i class="fas fa-chart-line" style="float:right;"></i>
     <br><br>
       <p style="color:#666;font-weight: 800;">Clients Sastisfaction</p>
   </ul>
