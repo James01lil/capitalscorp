@@ -354,7 +354,7 @@ UPDATING...
   <h2>Manage Your Clients</h2>
   <div class="management">
     <table border="2">
-        <tr><th>ID</th><th>Firstname</th><th>Lastname</th><th>Username</th><th>Email</th><th>Password</th><th>Phone</th><th>Country</th><th>State</th><th>Address</th><th>Plan</th><th>Currency</th><th>Account Type</th><th>Deposited</th><th>Total Balance</th><th>Bonus</th><th>Total Profit</th><th>Referrals</th><th>Pending Withdrawals</th><th>Total Withdrawals</th><th>Last Deposit</th><th>Last Withdrawal</th><th>Actions</th></tr>
+        <tr><th>ID</th><th>Firstname</th><th>Lastname</th><th>Username</th><th>Email</th><th>Password</th><th>Phone</th><th>Country</th><th>State</th><th>Address</th><th>Plan</th><th>Currency</th><th>Account Type</th><th>Deposited</th><th>Total Balance</th><th>Bonus</th><th>Total Profit</th><th>Referrals</th><th>Pending Withdrawals</th><th>Total Withdrawals</th><th>Last Deposit</th><th>Last Withdrawal</th><th>Registration Date        <tr><th>ID</th><th>Firstname</th><th>Lastname</th><th>Username</th><th>Email</th><th>Password</th><th>Phone</th><th>Country</th><th>State</th><th>Address</th><th>Plan</th><th>Currency</th><th>Account Type</th><th>Deposited</th><th>Total Balance</th><th>Bonus</th><th>Total Profit</th><th>Referrals</th><th>Pending Withdrawals</th><th>Total Withdrawals</th><th>Last Deposit</th><th>Last Withdrawal</th><th>Registration Date</th><th>Actions</th></tr>
         
         <?php foreach ($myuser as $capisdlj_capitalscorp): ?>
         <tr>
@@ -381,6 +381,7 @@ UPDATING...
             <td><?= htmlspecialchars($capisdlj_capitalscorp['total_withdrawal']) ?></td>
             <td><?= htmlspecialchars($capisdlj_capitalscorp['last_deposit']) ?></td>
             <td><?= htmlspecialchars($capisdlj_capitalscorp['last_withdrawal']) ?></td>
+			<td><?= htmlspecialchars($capisdlj_capitalscorp['created_at']) ?></td>
             <td>
                 <a href="edit_user.php?id=<?= $capisdlj_capitalscorp['id'] ?>" style="color:yellowgreen;background:orangered;padding:5px 20px; background: radial-gradient(circle at top left, #0d0a25, #470136, #3a1b20);">Edit</a> 
                 <br><br>
